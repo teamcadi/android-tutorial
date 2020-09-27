@@ -4,12 +4,13 @@ module.exports = {
     defaultTitle: `초보자를 위한 안드로이드 앱 만들기!`,
     siteTitleShort: `안드로이드 앱 개발 튜토리얼`,
     siteDescription: `초보자를 위한 안드로이드 앱 만들기!`,
-    siteUrl: `https://rocketdocs.netlify.com`,
+    siteUrl: `https://teamcadi.github.io/android-tutorial`,
     siteAuthor: `@rocketseat`,
     siteImage: `/cadi-logo-main.6628dfc.png`,
     siteLanguage: `en`,
     themeColor: `#8257E6`,
-    basePath: `/android-tutorial`,
+    basePath: `/android-tutorial/`,
+    pathPrefix: `/android-tutorial/`,
   },
   plugins: [
     {
