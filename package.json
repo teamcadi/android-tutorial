@@ -31,6 +31,8 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build && gh-pages -d public -b release"
+    "deploy": "gatsby build && gh-pages -d public",
+    "window_rm": "rm .\\node_modules\\.cache\\gh-pages\\ -r -fo",
+    "linux_rm": "rm -rf ./node_modules/.cache/gh-pages"
   }
 }
