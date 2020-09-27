@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/android-tutorial",
   siteMetadata: {
     siteTitle: `초보자를 위한 안드로이드 앱 만들기!`,
     defaultTitle: `초보자를 위한 안드로이드 앱 만들기!`,
@@ -9,8 +10,7 @@ module.exports = {
     siteImage: `/cadi-logo-main.6628dfc.png`,
     siteLanguage: `en`,
     themeColor: `#8257E6`,
-    basePath: `/android-tutorial/`,
-    pathPrefix: `/android-tutorial/`,
+    basePath: `/`,
   },
   plugins: [
     {
@@ -27,7 +27,7 @@ module.exports = {
       options: {
         name: `Rocketseat Gatsby Themes`,
         short_name: `RS Gatsby Themes`,
-        start_url: `/android-tutorial`,
+        start_url: `/`,
         background_color: `#ffffff`,
         display: `standalone`
       },
