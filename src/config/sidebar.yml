@@ -2,9 +2,7 @@
 
 - label: 'Introduction'
   link: '/'
-- label: 'Getting started'
-  link: '/getting-started'
-- label: Usage
+- label: 목차
   items:
     - label: 'Creating docs'
       link: '/usage/creating-docs'
@@ -12,13 +10,7 @@
       link: '/usage/navigation'
     - label: 'Shadowing'
       link: '/usage/shadowing'
-- label: More
-  items:
-    - label: FAQ
-      link: /faq
-    - label: Changelog
-      link: /changelog
 - label: Community
   items:
-    - label: '네이버 카페'
+    - label: '카디 동아리 네이버 카페'
       link: https://cafe.naver.com/teamcadi
