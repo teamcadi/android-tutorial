@@ -27,7 +27,7 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-bad6ddc8915177661318.js"
+    "url": "webpack-runtime-35cb1f0915ac1b10a19b.js"
   },
   {
     "url": "framework-58f863d6aa18c11a521f.js"
@@ -36,11 +36,11 @@ self.__precacheManifest = [
     "url": "f0e45107-02a22ac72de90821f3f0.js"
   },
   {
-    "url": "app-f85d0c4fb21c13d16a7b.js"
+    "url": "app-03d9cc0b2c37c02d5dae.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "ea9e4042d309d083a98a0976a2911115"
+    "revision": "ae8b65f646537f2b98101eb519da6f09"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-241020a1cf7d0f317bbe.js"
@@ -51,14 +51,14 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "1f73cf203cc48276165e73d4deddaabe"
+    "revision": "4ab1dc84c6f31d55ee65f0273924321d"
   },
   {
     "url": "polyfill-f1172e2e7b1be26f0281.js"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "9e66e52a3a907fa9a0ff6d4bdaf521e6"
+    "revision": "d1344c7d76cd22e40e2fc32c7b91d2b7"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -145,12 +145,12 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   lastNavigationRequest = event.request.url
 
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^`), ``)
+  pathname = pathname.replace(new RegExp(`^/android-tutorial`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-f85d0c4fb21c13d16a7b.js`))) {
+  if (!resources || !(await caches.match(`/android-tutorial/app-03d9cc0b2c37c02d5dae.js`))) {
     return await fetch(event.request)
   }
 
@@ -163,7 +163,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/android-tutorial/offline-plugin-app-shell-fallback/index.html`
   const offlineShellWithKey = workbox.precaching.getCacheKeyForURL(offlineShell)
   return await caches.match(offlineShellWithKey)
 })
