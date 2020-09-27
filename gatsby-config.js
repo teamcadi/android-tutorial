@@ -1,15 +1,15 @@
 module.exports = {
   siteMetadata: {
-    siteTitle: `Rocket Docs`,
-    defaultTitle: `Rocket Docs`,
-    siteTitleShort: `Rocket Docs`,
-    siteDescription: `Out of the box Gatsby Theme for creating documentation websites easily and quickly`,
+    siteTitle: `초보자를 위한 안드로이드 앱 만들기!`,
+    defaultTitle: `초보자를 위한 안드로이드 앱 만들기!`,
+    siteTitleShort: `안드로이드 앱 개발 튜토리얼`,
+    siteDescription: `초보자를 위한 안드로이드 앱 만들기!`,
     siteUrl: `https://rocketdocs.netlify.com`,
     siteAuthor: `@rocketseat`,
-    siteImage: `/banner.png`,
+    siteImage: `/cadi-logo-main.6628dfc.png`,
     siteLanguage: `en`,
     themeColor: `#8257E6`,
-    basePath: `/`,
+    basePath: `/android-tutorial`,
   },
   plugins: [
     {
