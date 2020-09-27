@@ -26,10 +26,9 @@ module.exports = {
       options: {
         name: `Rocketseat Gatsby Themes`,
         short_name: `RS Gatsby Themes`,
-        start_url: `/`,
+        start_url: `/android-tutorial`,
         background_color: `#ffffff`,
-        display: `standalone`,
-        icon: `static/favicon.png`,
+        display: `standalone`
       },
     },
     `gatsby-plugin-sitemap`,
