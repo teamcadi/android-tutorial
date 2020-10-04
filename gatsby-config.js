@@ -8,7 +8,7 @@ module.exports = {
     siteUrl: `https://teamcadi.github.io/android-tutorial`,
     siteAuthor: `@rocketseat`,
     siteImage: `/cadi-logo-main.6628dfc.png`,
-    siteLanguage: `en`,
+    siteLanguage: `kor`,
     themeColor: `#8257E6`,
     basePath: `/`,
   },
@@ -19,7 +19,7 @@ module.exports = {
         configPath: `src/config`,
         docsPath: `src/docs`,
         githubUrl: `https://github.com/rocketseat/gatsby-themes`,
-        baseDir: `examples/gatsby-theme-docs`,
+        baseDir: `src/@rocketseat/gatsby-theme-docs`,
       },
     },
     {
