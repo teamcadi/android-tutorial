@@ -1,0 +1,62 @@
+{
+  "name": "@rocketseat/gatsby-theme-docs",
+  "version": "2.2.3",
+  "main": "index.js",
+  "description": "Out of the box Gatsby Theme for creating documentation websites easily and quickly.",
+  "author": "João Pedro Schmitz <oi@joaopedro.cc> (@joaopedro_cc)",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "documentation",
+    "open source",
+    "rocketseat",
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-theme",
+    "react",
+    "docs",
+    "mdx"
+  ],
+  "homepage": "https://github.com/Rocketseat/gatsby-themes/tree/master/@rocketseat/gatsby-theme-docs#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rocketseat/gatsby-themes.git",
+    "directory": "@rocketseat/gatsby-theme-docs"
+  },
+  "bugs": {
+    "url": "https://github.com/Rocketseat/gatsby-themes/issues"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.27",
+    "@emotion/styled": "^10.0.27",
+    "@mdx-js/react": "^1.6.16",
+    "@rocketseat/gatsby-theme-docs-core": "^1.2.0",
+    "emotion-theming": "^10.0.27",
+    "gatsby-plugin-catch-links": "^2.1.24",
+    "gatsby-plugin-emotion": "^4.1.21",
+    "gatsby-plugin-mdx": "^1.2.37",
+    "gatsby-plugin-react-helmet": "^3.1.16",
+    "mdx-utils": "^0.2.0",
+    "parse-numeric-range": "^1.2.0",
+    "polished": "^3.4.2",
+    "prism-react-renderer": "^1.0.2",
+    "prop-types": "^15.7.2",
+    "react-helmet": "^5.2.1",
+    "react-icons": "^3.8.0",
+    "react-live": "^2.2.2",
+    "react-use": "^15.3.3",
+    "url-join": "^4.0.1"
+  },
+  "devDependencies": {
+    "gatsby": "^2.19.45",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.13.13",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
