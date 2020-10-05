@@ -7,7 +7,7 @@ module.exports = {
     siteDescription: `초보자를 위한 안드로이드 앱 만들기!`,
     siteUrl: `https://teamcadi.github.io/android-tutorial`,
     siteAuthor: `@rocketseat`,
-    siteImage: `/cadi-logo-main.6628dfc.png`,
+    siteImage: `/android-tutorial/cadi-logo-main.6628dfc.png`,
     siteLanguage: `kor`,
     themeColor: `#8257E6`,
     basePath: `/`,
