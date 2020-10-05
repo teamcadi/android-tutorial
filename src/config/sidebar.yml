@@ -4,8 +4,8 @@
   link: '/'
 - label: 목차
   items:
-    - label: 'Creating docs'
-      link: '/usage/creating-docs'
+    - label: '안드로이드 기본 구성 요소 정리'
+      link: '/usage/01-android'
     - label: 'Navigation'
       link: '/usage/navigation'
     - label: 'Shadowing'

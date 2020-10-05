@@ -1,0 +1,67 @@
+---
+title: 안드로이드 기본 구성요소 정리
+description: Learn how to create docs using Rocket Docs.
+---
+
+## JDK 설치
+* * * 
+1. https://www.oracle.com/kr/index.html에 접속한다.
+2. 새로운 Oracle 계정을 만든 후 로그인한다. (비밀번호 설정이 다소 복잡함)
+![image info](/assets/01-android-main.png)
+
+3. 스크롤을 아래로 내려서 '개발자' 항목을 클릭한다.
+![image info](/assets/01-android-main-2.png)
+
+4. 개발자 항목으로 들어간 후 스크롤을 맨 아래로 내린다음 'Java'를 클릭한다.
+![image info](/assets/01-android-main-3.png)
+
+5. Java SE 다운로드 클릭한다.
+![image info](/assets/01-android-main-4.png)
+
+6. 오른쪽에 Know More항목에 가서 Downloads를 클릭한다.
+![image info](/assets/01-android-main-5.png)
+
+7. 가장 중요한 단계이다. Java SE버전이 많지만 우리는 최신 버전이 아닌 SE 8버전을 찾아 설치힌다. JDK Download를 클릭한다.
+![image info](/assets/01-android-main-6.png)
+
+8. Dev Kit 에서 OS에 맞는 파일을 설치한다.
+![image info](/assets/01-android-main-7.png)
+
+9. 마지막으로 이 버튼을 눌러주게 되면 설치가 시작된다.
+![image info](/assets/01-android-main-8.png)
+
+10. 이 파일이 나타나면 성공적으로 설치한 것이다.
+![image info](/assets/01-android-main-9.png)
+
+## 환경 변수 설정
+* * * 
+
+1. 시작 버튼 옆에 검색창에 '내 PC'라고 검색한 후 오른쪽 속성을 클릭한다.
+![image info](/assets/01-android-main-10.png)
+
+2. 고급 시스템 설정을 클릭한다.
+![image info](/assets/01-android-main-11.png)
+
+3. 시스템 속성 > 고급 >환경 변수를 클릭한다.
+![image info](/assets/01-android-main-12.png)
+
+4.시스템 변수(S) > 새로 만들기(W)를 클릭한다.
+![image info](/assets/01-android-main-13.png)
+
+5. 가장 중요한 단계이다. 변수이름은 'JAVA_HOME'으로 하고, 변수 값은 JDK경로를 입력하면 된다.(6번 상세설명)
+![image info](/assets/01-android-main-14.png)
+
+6.여기까지의 경로를 복사해서 변수 값에 붙여넣기 하면 된다.(JDK 설치는 저번 포스팅 참고)
+![image info](/assets/01-android-main-15.png)
+
+7.설정이 완료되면 다음 시스템 변수 > Path를 찾아서 편집(I)를 클릭한다.
+![image info](/assets/01-android-main-16.png)
+
+8. 새로만들기(N)을 눌러서 %JAVA_HOME%을 입력한다. 이때 주의할 점은 5번에서 경로 값(V)이 \bin으로 끝난다면 %JAVA_HOME%뒤에 \bin을 붙이지 말아야 된다 !!
+![image info](/assets/01-android-main-17.png)
+
+9. 여기까지 따라왔다면 검색창에 cmd를 입력하여 Enter키를 누른다.
+![image info](/assets/01-android-main-18.png)
+
+10. 마지막 확인 단계로 javac -version을 입력하여 java 버전이 나오는지 확인한다. 만약 버전이 나타나지 않는다면 JDK 설치와 환경 변수 설정이 잘 되어있는지 확인하자!
+![image info](/assets/01-android-main-19.png)
