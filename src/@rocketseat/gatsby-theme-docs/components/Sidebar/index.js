@@ -53,7 +53,7 @@ export default function Sidebar({ isMenuOpen }) {
     <Container isMenuOpen={isMenuOpen}>
       <LogoContainer>
         <Link to={basePath} aria-label="Go to home page">
-          <img src="./cadi-logo-main.6628dfc.png" alt="Girl in a jacket"/>
+          <img src="/cadi-logo-main.6628dfc.png" alt="카디"/>
         </Link>
       </LogoContainer>
       <nav>
