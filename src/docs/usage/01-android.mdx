@@ -1,0 +1,145 @@
+---
+title: 안드로이드 기본 구성요소 정리
+description: Learn about Android basic componenets.
+---
+
+## JDK 설치
+* * *
+1. https://www.oracle.com/kr/index.html 에 접속한다.
+2. 상단 메뉴에서 '제품'을 클릭한다.
+![image info](/asset/01-android-jdk-1.jpg)
+
+3. '제품'의 하위 메뉴에서 'Java'를 선택한다.
+![image info](/asset/01-android-jdk-2.jpg)
+
+4. 우측 상단의 'Java 다운로드'를 클릭한다.
+![image info](/asset/01-android-jdk-3.jpg)
+
+5. Oracle JDK에서 'JDK Download'를 클릭한다.
+![image info](/asset/01-android-jdk-4.jpg)
+
+6. 스크롤을 내려 OS에 맞는 Installer 파일을 선택해 설치한다.
+![image info](/asset/01-android-jdk-5.jpg)
+
+7. 다운로드받은 파일을 실행해 설치를 진행한다.
+8. 이 파일이 나타나면 성공적으로 설치한 것이다.
+![image info](/asset/01-android-jdk-6.jpg)
+
+
+## 환경 변수 설정
+* * *
+
+1. 시작 버튼 옆에 검색창을 '내 PC'라고 검색한 후 오른쪽 속성을 클릭한다.
+2. 고급 시스템 설정을 클릭한다.
+![image info](/asset/01-android-jdk-7.jpg)
+
+3. 시스템 속성 > 고급 > 환경 변수를 클릭한다.
+![image info](/asset/01-android-jdk-8.jpg)
+
+4. 시스템 변수(S) > 새로 만들기(W)를 클릭한다.
+![image info](/asset/01-android-jdk-9.jpg)
+
+5. 가장 중요한 단계이다. 변수이름은 'JAVA_HOME'으로 하고, 변수 값은 JDK 경로를 입력하면 된다.
+![image info](/asset/01-android-jdk-10.jpg)
+
+6. 설정이 완료되면 다음 시스템 변수 > Path를 찾아서 편집(I)를 클릭한다.
+![image info](/asset/01-android-jdk-11.jpg)
+
+7. 새로만들기(N)을 눌러서 %JAVA_HOME%을 입력한다. 이 때 주의할 점은 5번에서 경로 값(V)이 \bin으로 끝난다면 %JAVA_HOME% 뒤에 \bin을 붙이지 말아야 한다 !!
+![image info](/asset/01-android-jdk-12.jpg)
+
+8. 여기까지 따라왔다면 검색창에 cmd를 입력하여 Enter키를 누른다.
+9. 마지막 확인 단계로 javac-version을 입력하여 java 버전이 나오는지 확인한다. 만약 버전이 나타나지 않는다면 JDK 설치와 환경 변수 설정이 잘 되어있는지 확인하자!
+![image info](/asset/01-android-jdk-13.jpg)
+
+
+## ANDROID STUDIO(안드로이드 스튜디오) 설치
+* * *
+
+1. https://developer.android.com 에 접속한다.
+2. 페이지 상단의 'Android Studio' 메뉴를 선택한다.
+![image info](/asset/01-android-android-1.jpg)
+
+3. 화면 중앙에 위치한 'DOWNLOAD ANDROID STUDIO'버튼을 선택한다.
+![image info](/asset/01-android-android-2.jpg)
+
+4. 사용 약관에 동의한 다음 'ANDROID STUDIO FOR WINDOWS 다운로드'버튼을 클릭한다.
+![image info](/asset/01-android-android-3.jpg)
+
+5. 다운로드한 설치 파일을 실행한다.
+6. Next 버튼을 눌러 다음 단계로 이동한다.
+![image info](/asset/01-android-android-4.png)
+
+7. 설치할 구성 요소를 선택하는 단계이다. 모든 항목을 선택하고 Next 버튼을 누른다.
+![image info](/asset/01-android-android-5.png)
+
+8. 설치 경로를 지정하고 Next 버튼을 클릭한다.
+![image info](/asset/01-android-android-6.png)
+
+9. 시작 메뉴에 표시될 폴더 이름을 입력하고 Next 버튼을 클릭한다.
+![image info](/asset/01-android-android-7.png)
+
+10. 설치가 완료되면 Next 버튼을 누르고 Finish 버튼을 클릭해 설치를 종료한다.
+![image info](/asset/01-android-android-9.png)
+
+![image info](/asset/01-android-android-10.png)
+
+11. 표준(Standard)과 개발자 맞춤(Custom) 방식 중 하나의 개발 환경을 선택한다.
+![image info](/asset/01-android-android-11.png)
+
+12. UI 테마를 'Darcula'와 'Light' 중 하나로 설정한다.
+![image info](/asset/01-android-android-12.png)
+
+13. 앞서 선택한 설정들을 확인하고 Finish 버튼을 클릭해 설치를 진행한다.
+![image info](/asset/01-android-android-13.png)
+
+14. 모든 설치가 완료되었다는 로그가 나타나면 Finish 버튼을 눌러 종료한다.
+![image info](/asset/01-android-android-14.png)
+
+
+## 이클립스(Eclipse, JAVA IDE) 설치
+* * *
+
+1. https://www.eclipse.org 에 접속한다.
+2. 우측 상단의 'Download' 버튼을 클릭한다.
+![image info](/asset/01-android-eclipse-1.jpg)
+
+3. 페이지 중앙의 'Download' 버튼을 클릭해 다운로드를 진행한다.
+![image info](/asset/01-android-eclipse-2.jpg)
+
+4. 다운로드를 완료하면 버전을 선택하는 화면이 나타난다. 일단, 'Eclipse IDE for Enterprise Java Developers'를 선택한다.
+![image info](/asset/01-android-eclipse-3.jpg)
+
+5. 'INSTALL' 버튼을 눌러 설치를 진행한다.
+![image info](/asset/01-android-eclipse-4.jpg)
+
+6. 설치가 완료되면 'LAUNCH'를 눌러 이클립스를 실행한다.
+![image info](/asset/01-android-eclipse-5.png)
+
+
+## D2Coding 폰트 적용
+* * *
+
+1. https://github.com/naver/d2codingfont/ 에 접속한다.
+2. 우측 중앙의 Releases 메뉴 중 가장 최신 버전을 선택한다.
+![image info](/asset/01-android-D2Coding-1.jpg)
+
+3. 버전의 설명을 읽은 뒤, 하단에서 Assets의 'D2Coding-Ver1.3.2-20180524.zip' 압축파일을 다운로드한다.
+![image info](/asset/01-android-D2Coding-2.jpg)
+
+4. 다운로드 받은 압축 파일을 풀어준다.
+![image info](/asset/01-android-D2Coding-3.jpg)
+
+5. 나타난 폴더 속의 텍스트 트루타입 파일들을 실행해 모두 '설치'버튼을 누른다.
+![image info](/asset/01-android-D2Coding-4.jpg)
+
+6. 이클립스를 실행하고 상단 메뉴에서 Windows > Preferences 를 선택한다.
+7. 왼쪽 메뉴에서 General > Apperance > Colors and Fonts에 들어가 폴더 'Basic'을 연다.
+![image info](/asset/01-android-D2Coding-5.jpg)
+
+8. 스크롤을 아래로 내려 'Text Fonts'를 더블 클릭한다.
+![image info](/asset/01-android-D2Coding-6.jpg)
+
+9. 설치한 D2 Coding 폰트를 적용하고 확인 버튼을 누른다.
+![image info](/asset/01-android-D2Coding-7.jpg)
+
