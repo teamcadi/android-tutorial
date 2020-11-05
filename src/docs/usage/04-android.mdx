@@ -1,0 +1,34 @@
+---
+title: CustomListView의 객체와 클래스 개념 정리
+description: Learn how to CustomListView's object and class.
+---
+
+## CustomListView의 객체와 클래스 개념 정리
+* * *
+### 레이아웃
+1. 가장 밑바탕이 되는 껍데기인 리스트뷰를 만들어줍니다.
+![image info](/assets/04-android-main-1.png)
+![image info](/assets/04-android-main-2.png)
+
+2. 리스트뷰의 아이템에 들어갈 껍데기를 만들어줍니다. RelativeLayout을 사용하여 이미지뷰 하나와 텍스트뷰 세 개로 구성하였습니다.
+![image info](/assets/04-android-main-3.png)
+![image info](/assets/04-android-main-4.png)
+![image info](/assets/04-android-main-5.png)
+
+### 객체와 클래스
+3. 데이터를 담을 클래스를 만들어줍니다.
+Lombok을 사용하여 생성자를 따로 만들지 않고 생성자 역할을 할 수 있도록 해주었습니다. Lombok을 사용하지 않을 경우 Getter/Setter를 만들어줍니다.
+![image info](/assets/04-android-main-6.png)
+
+4. 어댑터 객체를 만들어줍니다.
+어댑터 클래스는 변수선언 부분, 생성자, Getter로 구성되어 있습니다. Getter는 BaseAdapter를 상속받으면 자동으로 생성되고, 자신이 원하는 기능에 맞게 코드를 수정해주면 됩니다.
+코드의 해석은 주석을 참고해주세요.
+![image info](/assets/04-android-main-7.png)
+![image info](/assets/04-android-main-8.png)
+
+>LayoutInflater
+- 미리 정리해 둔 틀(listview_item.xml)을 실제 메모리에 올려주는 역할을 합니다
+- xml에 정의된 리소스들(여러개의 뷰들을)을 하나의 포괄적인 View객체로 반환해주는 역할을 수행합니다
+- onCreate 메소드 안에 있는 setContentview 메소드도 layoutInfalter의 역할을 수행합니다
+- 시스템 서비스 객체로 제공이 됨 => Context.getSystemService()
+
